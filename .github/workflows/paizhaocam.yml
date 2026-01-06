@@ -1,9 +1,11 @@
 name: paizhaocam
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 1/6 * * *'
-jobs:  # 5642
+    - cron: '15 3/6 * * *'
+
+jobs:
   build:
     runs-on: ubuntu-latest
 
@@ -11,11 +13,11 @@ jobs:  # 5642
       - uses: actions/checkout@v4
       - name: paizhaocam
         env:
-          ltnk641: ${{ secrets.ltnk641 }}
+          cm6: ${{ secrets.cm6 }}
         run: |
-          echo $ltnk641 | jq -r .jm73519 | /bin/bash
-          echo $zzq95012 | jq -r .cx0 | /bin/bash
-          echo $rr0270 | jq -r .k327 | /bin/bash
-          echo $oy58526 | jq -r .azqmz75249 | /bin/bash
-          echo $bwszz93582 | jq -r .wrrf7 | /bin/bash
+          echo $cm6 | jq -r .viyjb6156 | /bin/bash
+          echo $tgj6 | jq -r .oy7 | /bin/bash
+          echo $zt18325 | jq -r .xnux07382 | /bin/bash
+          echo $fwvvl84 | jq -r .kcise8433 | /bin/bash
+          echo $c543 | jq -r .lo27 | /bin/bash
 
